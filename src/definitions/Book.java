@@ -14,9 +14,7 @@ public class Book {
     private String authorName;
     private String isbnNumber;
 
-    public String getBookName() {
-        return bookName;
-    }
+    public String getBookName() { return bookName; }
 
     public String getAuthorName() {
         return authorName;
@@ -37,10 +35,11 @@ public class Book {
     public void setIsbnNumber(String isbnNumber) {
         this.isbnNumber = isbnNumber;
     }
-    public Book(){
-        this.bookName= getBookName();
-        this.authorName=getAuthorName();
-        this.isbnNumber=getIsbnNumber();
+
+    public Book() {
+        this.bookName = getBookName();
+        this.authorName = getAuthorName();
+        this.isbnNumber = getIsbnNumber();
     }
 
     @Override
