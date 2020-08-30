@@ -8,13 +8,13 @@ package definitions;
 
 public class Student {
     private final int totalTypesOfNamesOfAPerson = 3;
-    private String [] studentName = new String[totalTypesOfNamesOfAPerson];
+    private String [] studentNames = new String[totalTypesOfNamesOfAPerson];
     private long universityRollNumber;
     private int numberOfBooksIssued;
     private String[] bookNames;
 
-    public String[] getStudentName() {
-        return studentName;
+    public String[] getStudentNames() {
+        return studentNames;
     }
 
     public long getUniversityRollNumber() {
@@ -33,8 +33,8 @@ public class Student {
         this.bookNames = bookNames;
     }
 
-    public void setStudentName(String[] studentName) {
-        this.studentName = studentName;
+    public void setStudentNames(String[] studentNames) {
+        this.studentNames = studentNames;
     }
 
     public void setNumberOfBooksIssued(int numberOfBooksIssued) {
@@ -43,6 +43,12 @@ public class Student {
 
     public void setUniversityRollNumber(long universityRollNumber) {
         this.universityRollNumber = universityRollNumber;
+    }
+    public Student(){
+        this.bookNames=getBookNames();
+        this.numberOfBooksIssued=getNumberOfBooksIssued();
+        this.studentNames=getStudentNames();
+        this.universityRollNumber=getUniversityRollNumber();
     }
 }
 
