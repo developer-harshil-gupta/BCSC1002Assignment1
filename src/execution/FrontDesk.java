@@ -48,6 +48,7 @@ public class FrontDesk {
                     break;
                 default:
                     break;
+
             }
 
         } while (customerInput != EXIT);
