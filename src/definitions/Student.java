@@ -10,8 +10,8 @@ import java.util.Arrays;
 import java.util.Objects;
 
 public class Student {
-    private final int TOTAL_TYPES_OF_NAMES_OF_PERSON = 3;
-    private String [] studentNames = new String[TOTAL_TYPES_OF_NAMES_OF_PERSON];
+    private final int NUMBER_OF_SECTIONS_IN_NAME = 3;
+    private String [] studentNames = new String[NUMBER_OF_SECTIONS_IN_NAME];
     private long universityRollNumber;
     private int numberOfBooksIssued;
     private String[] bookNames;
