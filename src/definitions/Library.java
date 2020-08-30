@@ -42,4 +42,13 @@ public class Library {
     public int hashCode() {
         return Arrays.hashCode(getShowCurrentBooksInLibrary());
     }
+
+    /**
+     * This method will print list of all books which are currently present at library.
+     */
+    public void showListOfCurrentBooks() {
+        for (int index = 0; index < showCurrentBooksInLibrary.length; index++) {
+            System.out.println(showCurrentBooksInLibrary[index]);
+        }
+    }
 }
