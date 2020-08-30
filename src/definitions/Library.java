@@ -12,4 +12,8 @@ public class Library {
     public String[] getShowCurrentBooksInLibrary() {
         return showCurrentBooksInLibrary;
     }
+
+    public void setShowCurrentBooksInLibrary(String[] showCurrentBooksInLibrary) {
+        this.showCurrentBooksInLibrary = showCurrentBooksInLibrary;
+    }
 }
