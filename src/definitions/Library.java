@@ -9,4 +9,7 @@ package definitions;
 public class Library {
     private String [] showCurrentBooksInLibrary;
 
+    public String[] getShowCurrentBooksInLibrary() {
+        return showCurrentBooksInLibrary;
+    }
 }
