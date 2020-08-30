@@ -65,4 +65,11 @@ public class Book {
     public int hashCode() {
         return Objects.hash(getBookName(), getAuthorName(), getIsbnNumber());
     }
+
+    /**
+     * This method will provide you details of book
+     */
+    public void showBookDetail() {
+        System.out.println("Book name: " + getBookName() + " Author name: " + getAuthorName() + " ISBN number: " + isbnNumber);
+    }
 }

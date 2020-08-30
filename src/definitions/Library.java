@@ -9,7 +9,7 @@ package definitions;
 import java.util.Arrays;
 
 public class Library {
-    private String [] showCurrentBooksInLibrary;
+    private String[] showCurrentBooksInLibrary;
 
     public String[] getShowCurrentBooksInLibrary() {
         return showCurrentBooksInLibrary;
