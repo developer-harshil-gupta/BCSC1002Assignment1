@@ -18,8 +18,9 @@ public class Library {
     public void setShowCurrentBooksInLibrary(String[] showCurrentBooksInLibrary) {
         this.showCurrentBooksInLibrary = showCurrentBooksInLibrary;
     }
-    public Library(){
-        this.showCurrentBooksInLibrary=getShowCurrentBooksInLibrary();
+
+    public Library() {
+        this.showCurrentBooksInLibrary = getShowCurrentBooksInLibrary();
     }
 
     @Override
