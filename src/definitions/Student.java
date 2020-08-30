@@ -11,7 +11,7 @@ import java.util.Objects;
 
 public class Student {
     private final int NUMBER_OF_SECTIONS_IN_NAME = 3;
-    private String [] studentNames = new String[NUMBER_OF_SECTIONS_IN_NAME];
+    private String[] studentNames = new String[NUMBER_OF_SECTIONS_IN_NAME];
     private long universityRollNumber;
     private int numberOfBooksIssued;
     private String[] bookNames;
@@ -47,11 +47,12 @@ public class Student {
     public void setUniversityRollNumber(long universityRollNumber) {
         this.universityRollNumber = universityRollNumber;
     }
-    public Student(){
-        this.bookNames=getBookNames();
-        this.numberOfBooksIssued=getNumberOfBooksIssued();
-        this.studentNames=getStudentNames();
-        this.universityRollNumber=getUniversityRollNumber();
+
+    public Student() {
+        this.bookNames = getBookNames();
+        this.numberOfBooksIssued = getNumberOfBooksIssued();
+        this.studentNames = getStudentNames();
+        this.universityRollNumber = getUniversityRollNumber();
     }
 
     @Override
@@ -81,5 +82,12 @@ public class Student {
         result = 31 * result + Arrays.hashCode(getStudentNames());
         result = 31 * result + Arrays.hashCode(getBookNames());
         return result;
+    }
+
+    /**
+     * This method will provide details about student
+     */
+    public void showsStudentDetails() {
+        System.out.println("Total number of student " + getStudentNames().length + " number of book issued : " + getNumberOfBooksIssued() + " university roll number: " + getUniversityRollNumber());
     }
 }
