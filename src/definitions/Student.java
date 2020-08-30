@@ -6,9 +6,11 @@
  * */
 package definitions;
 
+import java.util.Arrays;
+
 public class Student {
-    private final int totalTypesOfNamesOfAPerson = 3;
-    private String [] studentNames = new String[totalTypesOfNamesOfAPerson];
+    private final int TOTAL_TYPES_OF_NAMES_OF_PERSON = 3;
+    private String [] studentNames = new String[TOTAL_TYPES_OF_NAMES_OF_PERSON];
     private long universityRollNumber;
     private int numberOfBooksIssued;
     private String[] bookNames;
@@ -49,6 +51,16 @@ public class Student {
         this.numberOfBooksIssued=getNumberOfBooksIssued();
         this.studentNames=getStudentNames();
         this.universityRollNumber=getUniversityRollNumber();
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "studentNames=" + Arrays.toString(studentNames) +
+                ", universityRollNumber=" + universityRollNumber +
+                ", numberOfBooksIssued=" + numberOfBooksIssued +
+                ", bookNames=" + Arrays.toString(bookNames) +
+                '}';
     }
 }
 
